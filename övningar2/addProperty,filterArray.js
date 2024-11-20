@@ -16,7 +16,20 @@ const people = [
 
 function updatePeople(peopleArr) {
   // Din kod här:
+  peopleArr.forEach((person) => {
+    if (person.age >= 18) {
+      person.adult = true;
+    } else {
+      person.adult = false;
+    }
+  });
+  return peopleArr;
 }
 
+console.log(updatePeople(people));
 // 7.2 (2p) Skriv en funktion med arrayen people som input som
 // returnerar en array med bara vuxna. Alltså age minst 18 år.
+function onlyAdults(people) {
+  return people.filter((person) => person.age >= 18);
+}
+console.log(onlyAdults(people));

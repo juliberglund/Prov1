@@ -2,7 +2,8 @@
 // Skriv klart funktionen som räknar ut den totala längden av dom 3 orden.
 
 function totalWordLength(word1, word2, word3) {
-  //din kod här
+  const words = word1 + word2 + word3;
+  return words.length;
 }
 
 const result = totalWordLength("hej", "på", "dig");
