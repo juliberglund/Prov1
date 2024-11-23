@@ -6,5 +6,12 @@ const car = {
   speed: 100,
 };
 
+const newCar = { ...car, speed: 200 };
+console.log(newCar);
+
 // 9.2 Skapa två variabler name och speed genom
 // destructuring av objektet car.
+
+const { name, speed } = car;
+
+console.log(car);
