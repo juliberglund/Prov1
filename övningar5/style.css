@@ -1,0 +1,48 @@
+/* Grundläggande styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.countries-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.countryDiv {
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.countryDiv img {
+  width: 100%;
+  max-width: 40%;
+}
+
+.countryDiv h1 {
+  font-size: 1.5em;
+}
+
+.countryDiv h2 {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.countryDiv p {
+  font-size: 1em;
+  color: #777;
+}
+
+/* Responsiv design för mobil */
+@media (max-width: 768px) {
+  .countryDiv {
+    width: 100%; /* 1 kolumn på mobil, hela bredden */
+  }
+}

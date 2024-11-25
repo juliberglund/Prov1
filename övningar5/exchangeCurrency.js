@@ -15,6 +15,14 @@ const currencies = [
 
 function convertToUSD(currencyArr) {
   //Din kod här
+  return currencyArr.map((currencyObj) => {
+    const rate = exchangeRates[currencyObj.currency]; // Hämta växelkursen för valutan
+    const convertedValue = currencyObj.value * rate; // Omvandla värdet till USD
+    return {
+      currency: currencyObj.currency,
+      value: Math.round(convertedValue),
+    }; // Returnera omräknat objekt
+  });
 }
 
 console.log(convertToUSD(currencies));
